@@ -38,7 +38,7 @@ namespace ExoApi.Repositories
                 projetoBuscado.Area = projeto.Area;
                 projetoBuscado.Status = projeto.Status;
             }
-            _context.Projetos.Update(projetoBuscado);
+            _context.Projetos.Update(projetoBuscado); 
             _context.SaveChanges();
         }
         public void Deletar(int id)
@@ -46,6 +46,6 @@ namespace ExoApi.Repositories
             Projeto projetoBuscado = _context.Projetos.Find(id);
             _context.Projetos.Remove(projetoBuscado);
             _context.SaveChanges();
-        }
+        } 
     } 
 }

@@ -44,7 +44,7 @@ namespace ExoApi.Controllers
         public IActionResult Atualizar(int id, Projeto projeto)
         {
             _projetoRepository.Atualizar(id,projeto);
-            return StatusCode(204);
+            return StatusCode(204); 
         }
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
